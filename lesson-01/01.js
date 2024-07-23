@@ -3,7 +3,7 @@
 
 // your code
 {
-  let sum = 0;
+  let sum = 1;
   let lesson1I = 1;
 
   while (lesson1I <= 20) {

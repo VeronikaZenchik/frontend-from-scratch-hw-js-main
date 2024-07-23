@@ -7,7 +7,7 @@
 
 // your code
 {
-  let factorial = 1;
+  let  factorial = 1;
   let leson2I = 1;
 
   while (leson2I <= 10) {
