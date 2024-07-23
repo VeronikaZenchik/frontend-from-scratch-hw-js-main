@@ -6,12 +6,14 @@
 */
 
 // your code
-let factorial = 1;
-let i = 1;
+{
+  let lessonFactorial = 1;
+  let leson2I = 1;
 
-while (i<10) {
-  factorial = factorial * i;
-  i++;
+  while (leson2I < 10) {
+    lessonFactorial = lessonFactorial * leson2I;
+    leson2I++;
+  }
+
+  console.log(lessonFactorial);
 }
-
-console.log(factorial);
