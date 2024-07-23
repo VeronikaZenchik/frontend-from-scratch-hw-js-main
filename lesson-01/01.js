@@ -6,7 +6,7 @@
   let lesson1Sum = 0;
   let lesson1I = 1;
 
-  while (lesson1I < 20) {
+  while (lesson1I <= 20) {
     lesson1Sum = lesson1Sum + lesson1I;
     lesson1I++;
   }

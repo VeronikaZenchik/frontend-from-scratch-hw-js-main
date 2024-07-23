@@ -7,13 +7,13 @@
 
 // your code
 {
-  let lessonFactorial = 1;
+  let factorial = 1;
   let leson2I = 1;
 
   while (leson2I < 10) {
-    lessonFactorial = lessonFactorial * leson2I;
+    factorial = factorial * leson2I;
     leson2I++;
   }
 
-  console.log(lessonFactorial);
+  console.log(factorial);
 }

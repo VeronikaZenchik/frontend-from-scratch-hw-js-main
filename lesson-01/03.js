@@ -9,10 +9,10 @@
   let leson3sum = 1;
   let leson3I = 1;
 
-  while (leson3I < 20) {
+  while (leson3I <= 20) {
   leson3I++;
   if (leson3sum % 2 == 0){
+    console.log(leson3sum);
   } 
-  console.log(leson3sum);
   }
 }
