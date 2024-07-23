@@ -3,13 +3,13 @@
 
 // your code
 {
-  let lesson1Sum = 0;
+  let sum = 0;
   let lesson1I = 1;
 
   while (lesson1I <= 20) {
-    lesson1Sum = lesson1Sum + lesson1I;
+    sum = sum + lesson1I;
     lesson1I++;
   }
 
-  console.log(lesson1Sum);
+  console.log(sum);
 }
