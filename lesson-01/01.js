@@ -2,14 +2,13 @@
 // Результат присвойте переменной sum
 
 // your code
-// {
-//   let sum = 0;
-//   let lesson1I = 1;
 
-//   while (lesson1I <= 20) {
-//     sum = sum + lesson1I;
-//     lesson1I++;
-//   }
+  let sum = 0;
+  let lesson1I = 1;
 
-//   console.log(sum);
-// }
+  while (lesson1I <= 20) {
+    sum = sum + lesson1I;
+    lesson1I++;
+  }
+
+  console.log(sum);

@@ -5,15 +5,14 @@
 */
 
 // your code
-// {
-//   let leson3sum = 1;
-//   let leson3I = 1;
+{
+  let leson3sum = 1;
+  let leson3I = 2;
 
-//   while (leson3I <= 20) {
-//   leson3I++;
-//   if (leson3sum % 3 == 0){
-//     leson3sum = leson3sum + leson3sum;
-//   } 
-//   console.log(leson3sum);
-//   }
-// }
+  while (leson3I <= 10) {
+  leson3I++;
+  if (leson3sum % 2 == 0){
+    alert(leson3I)
+  } 
+  }
+}

@@ -6,7 +6,7 @@
 */
 
 // your code
-{
+
   let factorial = 1;
   let leson2I = 1;
 
@@ -16,4 +16,3 @@
   }
 
   console.log(factorial);
-}
