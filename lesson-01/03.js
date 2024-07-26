@@ -7,7 +7,7 @@
 // your code
 
 
-let sum3 = 1;
+let sum3 = 0;
 let i = 0;
 while (i < 20) { 
   i++;
