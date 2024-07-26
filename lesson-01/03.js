@@ -5,14 +5,16 @@
 */
 
 // your code
-{
-  let leson3sum = 1;
-  let leson3I = 2;
 
-  while (leson3I <= 10) {
-  leson3I++;
-  if (leson3sum % 2 == 0){
-    alert(leson3I)
-  } 
-  }
+
+let sum3 = 1;
+let i = 0;
+while (i < 20) { 
+  i++;
+  if (i % 2 == 0) continue;  
+  sum3 = sum3 + i;
+  i++;
 }
+
+
+  console.log(sum3);
