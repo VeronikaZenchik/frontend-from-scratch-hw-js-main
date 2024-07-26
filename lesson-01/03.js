@@ -7,14 +7,14 @@
 // your code
 
 
-let sum3 = 0;
+let sum = 0;
 let i = 0;
 while (i < 20) { 
   i++;
   if (i % 2 == 0) continue;  
-  sum3 = sum3 + i;
+  sum = sum + i;
   i++;
 }
 
 
-  console.log(sum3);
+  console.log(sum);
