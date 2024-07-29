@@ -10,26 +10,19 @@
 // тестовые данные (значения можно менять)
 
 
-// const isAdmin = false
-// const isVerifiedUser = false
-// const hasSpecialPermission = false
-// const hasTemporaryPass = false
+const isAdmin = false
+const isVerifiedUser = true
+const hasSpecialPermission = true
+const hasTemporaryPass = false
 
-// let isAccess = false
+let isAccess;
 
-// // your code
 
-// while (!isAccess) {
-//   userChoice = prompt("Выберите камень, ножницы или бумагу")
-//   userChoice = userChoice.toLowerCase();
-//   if () {
-//     let isAccess =
-//     (isAdmin === true &&  (isVerifiedUser === true || hasTemporaryPass === true)) ||
-//     (isVerifiedUser === true && (isVerifiedUser === true || hasTemporaryPass === true))
-//     alert("Доступ разрешен")
-//     isAccess === true
-//   } else {
-//     alert("Доступ запрещен!")
-//     isWinner === true
-//   } 
-// }
+  if ((isAdmin === true &&  (isVerifiedUser === true || hasTemporaryPass === true)) ||
+  (isVerifiedUser === true && (isVerifiedUser === true || hasTemporaryPass === true))) {
+    isAccess = true;
+  } else {
+    isAccess = false;
+  }
+
+  console.log("Доступ предоставлен:", isAccess);
