@@ -2,14 +2,13 @@
 // Функция должна возвращать true, если число чётное, и false — в противном случае
 
 function isEven(number) {
+  let x;
     if (number % 2 == 0) {
-      console.log(number + " число четное") 
-      return true;
+      x = true;
   } else {
-    console.log(number + " число нечетное") 
-    return false;
+    x = false;
   }
+  return x;
 }
-isEven(number)
-console.log(isEven);
+console.log(isEven(18));
 
