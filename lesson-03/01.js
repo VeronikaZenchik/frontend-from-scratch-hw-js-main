@@ -7,4 +7,4 @@ function calculateAverage(a, b) {
 }
 
 
-console.log(calculateAverage(10, 2));
+console.log(calculateAverage(88,11));
