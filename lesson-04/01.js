@@ -18,7 +18,7 @@ function includesElement(array, element) {
     if (array[i] === element){
       return true
     }
-    return false
   }
+  return false
 }
 console.log(includesElement([1, 2, 3, 4, 5], 5));
