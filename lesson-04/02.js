@@ -15,15 +15,15 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
-// function findUniqueElements(array) {
-//   const doubleNumbers = [];
+function findUniqueElements(array) {
+  let doubleNumbers = []
+  for (let str of array) {
+      if (!doubleNumbers.includes(str)){
+        doubleNumbers.push(str)
+      }
+      }
+return doubleNumbers
+    }
+console.log(findUniqueElements([1, 2, 4, 15, 11, 2, 1, 4]));
 
-//   for (let i = 0; i < array.length; i++)
-//     if (array[i] === doubleNumbers){
-//       return doubleNumbers
 
-//     }
-
-// }
-
-// console.log(findUniqueElements([1, 2, 3, 2, 1, 4]));
