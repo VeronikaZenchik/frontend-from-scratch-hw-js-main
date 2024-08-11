@@ -17,13 +17,16 @@
 
 function findUniqueElements(array) {
   let doubleNumbers = []
-  for (let str of array) {
-      if (!doubleNumbers.includes(str)){
-        doubleNumbers.push(str)
-      }
-      }
+  for (let i = 0; i < array.length; i++) {
+    // let num = array[i]; присваивает текущий элемент массива переменной `str`. Это делается для удобства, чтобы не обращаться к массиву `arr` каждый раз по индексу — вместо этого мы работаем с переменной `str`, что позволяет упростить код и повысить его читаемость.
+    if (!doubleNumbers.includes(array[i])){
+      doubleNumbers.push(array[i])
+    }
+  }
+    
 return doubleNumbers
     }
-console.log(findUniqueElements([1, 2, 4, 15, 11, 2, 1, 4]));
+console.log(findUniqueElements([1, 2, 4, 2, 1, 4]));
+
 
 
