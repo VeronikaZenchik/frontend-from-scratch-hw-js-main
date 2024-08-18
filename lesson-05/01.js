@@ -28,6 +28,22 @@ console.log(game.resources);
 
 
 
+// const game = {
+//   resources: {
+//     gold: 250,
+//     lumber: 100,
+//   },
+//   addResource(resource, amount) {
+//     if ('resources' in resource){
+//       resource[resources] += amount
+//   } else {
+//     console.log("Invalid resource");
+//   }
+//   },
+// }
+// game.addResource("gold", 50)
+// console.log(game.resources);
+
 
 
 

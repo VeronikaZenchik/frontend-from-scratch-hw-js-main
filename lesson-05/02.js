@@ -1,4 +1,3 @@
-//
 // Напишите функцию `updateGallery`, которая будет обновлять информацию о произведениях искусства в виртуальной галерее. Функция должна принимать три параметра:
 
 // - объект галереий
@@ -34,9 +33,16 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery(objectOfGallary, nameOfArt, newValue) {
-  
+function updateGallery(gallery, nameOfArt, newValue) {
+  if(nameOfArt in gallery) {
+    gallery[nameOfArt] = newValue
+  } else {
+    gallery[nameOfArt] = newValue
+  }
 }
+
+updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
+updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali')
 console.log(gallery)
 
 
