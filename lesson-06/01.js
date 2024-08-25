@@ -31,7 +31,7 @@ function getImage(){
 
 
 prevButton.addEventListener("click", function(){
-  currentImageIndex = (currentImageIndex - 1) % WEB_TECH_IMAGES.length;
+  currentImageIndex = (currentImageIndex - 1 + WEB_TECH_IMAGES.length) % WEB_TECH_IMAGES.length;
   getImage()
 })
 
@@ -39,4 +39,3 @@ nextButton.addEventListener("click", function(){
   currentImageIndex = (currentImageIndex + 1) % WEB_TECH_IMAGES.length;
   getImage()
 })
-
