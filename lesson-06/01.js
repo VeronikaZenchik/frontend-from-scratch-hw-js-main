@@ -26,18 +26,17 @@ let currentImageIndex = 0;
 
 
 function getImage(){
-  currentImageIndex = (currentImageIndex + 1) % WEB_TECH_IMAGES.length;
   image.src = WEB_TECH_IMAGES[currentImageIndex]
 }
+
+
 prevButton.addEventListener("click", function(){
-  getImage(currentImageIndex - 1)
+  currentImageIndex = (currentImageIndex - 1) % WEB_TECH_IMAGES.length;
+  getImage()
 })
+
 nextButton.addEventListener("click", function(){
-  getImage(currentImageIndex + 1)
+  currentImageIndex = (currentImageIndex + 1) % WEB_TECH_IMAGES.length;
+  getImage()
 })
-
-
-
-
-
 
