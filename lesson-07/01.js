@@ -7,15 +7,14 @@
 */
 
 const capitalizeWords = (string) => {
-  let result = '';
-  for (let i = 0; i < string.length; i++) {
-    if(i === 0 || string[i - 1] === ' ') {
-      result+= string[i].toUpperCase()
+  let result = ''; // здесь мы создаем переменную где будет  хранить наш результат
+  for (let i = 0; i < string.length; i++) { // запускаем цикл который проходится по симвоаам стринг, перменная i используется как индекст текущего символа
+    if(i === 0 || string[i - 1] === ' ') { // если первая буква нашего слова
+      result+= string[i].toUpperCase() // то мы елаем заглывными буквами или предыдущий символ пробел
     } else {
-      result += string[i]
+      result += string[i] //если нет, то оставляем без изменений
     }
   }
-  return result
+  return result // возращаем наш результат
 }
-
 console.log(capitalizeWords("hello world from javascript"));
