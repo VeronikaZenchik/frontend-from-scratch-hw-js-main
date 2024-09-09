@@ -10,13 +10,15 @@
 */
 
 function truncate(str, maxLength) {
-    if(str.length > maxLength){
-      return str.slice(0, maxLength) + '...';
+    if(str.length > maxLength){ // мы делаем если строка длиннее то
+      return str.slice(0, maxLength) + '...'; // добавляем слайс, первый идет наш индекс и до чего мы обрезаем нашу строк(до максимальной длины) и добавляем многоточие
     } else {
-      return str
+      return str // в других случаях просто возращаем нашу строку
     } 
   }
 
 console.log(truncate("Вот, что мне действительно нравится в этом", 20));
 console.log(truncate("Короткая строка", 20));
+console.log(truncate("", 5));
+
 

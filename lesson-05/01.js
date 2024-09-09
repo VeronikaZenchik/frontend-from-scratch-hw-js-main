@@ -10,21 +10,21 @@
 3. Если ресурс существует, метод должен добавлять значение `amount` к текущему количеству этого ресурса в объекте.
 */
 
-// const game = {
-//   resources: {
-//     gold: 250,
-//     lumber: 100,
-//   },
-//   addResource(resource, amount) {
-//     if (this.resources.hasOwnProperty(resource)){
-//       this.resources[resource] += amount
-//   } else {
-//     console.log("Invalid resource");
-//   }
-//   },
-// }
-// game.addResource("gold", 50)
-// console.log(game.resources);
+const game = {
+  resources: {
+    gold: 250,
+    lumber: 100,
+  },
+  addResource(resource, amount) {
+    if (this.resources.hasOwnProperty(resource)){
+      this.resources[resource] += amount
+  } else {
+    console.log("Invalid resource");
+  }
+  },
+}
+game.addResource("gold", 50)
+console.log(game.resources);
 
 
 
@@ -34,24 +34,15 @@
 //     lumber: 100,
 //   },
 //   addResource(resource, amount) {
-//     if ('resources' in resource){
-//       resource[resources] += amount
+//     if ('resources' in resource){ // if (resource in this.resources)  -- можно было так решить
+//       resources[resource] += amount // this.resources[resource] += amount;
 //   } else {
 //     console.log("Invalid resource");
 //   }
 //   },
 // }
 // game.addResource("gold", 50)
-// console.log(game.resources);
+console.log(game.resources);
 
 
-
-
-// addResource(resource, amount) {
-//   let key = "resources"
-//     if (key in resource){
-//       resource[key] += amount
-//   } else {
-//     console.log("Invalid resource");
-//   }
-// }
+// Теперь о вашем вопросе, почему нельзя использовать цикл `for...in` в данном контексте. Циклы `for...in` обычно используются для перебора свойств объектов, но в этом случае наша функция `addResource` не предназначена для перебора, а для добавления определенного количества ресурсов.
