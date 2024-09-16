@@ -31,7 +31,18 @@ const map = (array, callback) => {
     if (callback(element, index)) {
       result.push(element);
   }
-    
   }
   return result
 }
+
+
+const numbers = [1, 2, 3, 4, 5]
+const doubledNumbers = numbers.map((element, index) => element * 2)
+console.log(doubledNumbers)
+
+const letters = ['a', 'b', 'c'];
+const indexLetters = letters.map((element, index)=> {
+  return element + index
+})
+console.log(indexLetters);
+

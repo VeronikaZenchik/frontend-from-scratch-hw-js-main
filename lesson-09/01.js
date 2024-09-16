@@ -42,7 +42,7 @@ const oddNumbers = filter(numbers, (element, index) => {
 console.log(oddNumbers)
 
 const words = ['cat', 'sheep', 'dog', 'wolf', 'dragon']
-const lengthWords = filter(words, (element,index) => {
+const lengthWords = words.filter((element,index) => {
   return element.length > 3
 })
 console.log(lengthWords);
