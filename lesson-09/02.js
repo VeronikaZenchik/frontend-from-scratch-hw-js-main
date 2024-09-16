@@ -36,13 +36,15 @@ const map = (array, callback) => {
 }
 
 
-const numbers = [1, 2, 3, 4, 5]
-const doubledNumbers = map(numbers,(element, index) => element * 2)
-console.log(doubledNumbers)
 
-const letters = ['a', 'b', 'c'];
-const indexLetters = map(letters, (element, index)=> {
-  return element + index
-})
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = map(numbers, (element, index) => {
+  return element * 2;
+});
+console.log(doubledNumbers); 
+
+const letters = ['a', 'b', 'c', 'd'];
+const indexLetters = map(letters, (element, index) => {
+  return element + index;
+});
 console.log(indexLetters);
-
