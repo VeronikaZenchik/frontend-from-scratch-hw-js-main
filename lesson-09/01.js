@@ -34,3 +34,15 @@ for (let index = 0; index < array.length; index++) {
 }
 return result
 }
+
+const numbers = [1, 2, 3, 4, 5]
+const oddNumbers = filter(numbers, (element, index) => {
+  return element % 2 !== 0
+});
+console.log(oddNumbers)
+
+const words = ['cat', 'sheep', 'dog', 'wolf', 'dragon']
+const lengthWords = filter(words, (element,index) => {
+  return element.length > 3
+})
+console.log(lengthWords);
