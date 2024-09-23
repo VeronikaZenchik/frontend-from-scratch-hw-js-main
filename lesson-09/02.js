@@ -38,13 +38,13 @@ const map = (array, callback) => {
 
 
 const numbers = [1, 2, 3, 4, 5];
-const doubledNumbers = filter(numbers, (element, index) => {
+const doubledNumbers = map(numbers, (element, index) => {
   return element * 2;
 });
 console.log(doubledNumbers); 
 
 const letters = ['a', 'b', 'c', 'd'];
-const indexLetters = filter(letters, (element, index) => {
+const indexLetters = map(letters, (element, index) => {
   return element + index;
 });
 console.log(indexLetters);

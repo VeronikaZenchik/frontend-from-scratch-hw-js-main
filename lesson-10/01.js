@@ -6,9 +6,9 @@
 Пошаговый план реализации:
 
 1. Реализовать метод deleteMovie в объекте model:
-  - метод должен принимать id фильма, который необходимо удалить
-  - метод должен удалить фильм из массива movies
-  - метод должен обновить отображение фильмов на странице
+  - метод должен принимать id фильма, который необходимо удалить+
+  - метод должен удалить фильм из массива movies+
+  - метод должен обновить отображение фильмов на странице+
 
 2. Добавить обработчик события для удаления фильмов:
   - в метода view.init добавить обработчик события на список фильмов
@@ -16,9 +16,9 @@
   - при клике на кнопку удаления, получить id фильма из родительского элемента и передать его в метод deleteMovie объекта controller
 
 3. Реализовать метод deleteMovie в объекте controller:
-  - метод должен принимать id фильма
-  - метод должен передать id фильма в метод deleteMovie объекта model
-  - метод должен отобразить сообщение "Фильм успешно удалён!" в message-box
+  - метод должен принимать id фильма+
+  - метод должен передать id фильма в метод deleteMovie объекта model+
+  - метод должен отобразить сообщение "Фильм успешно удалён!" в message-box+
 */
 
 const model = {
@@ -30,6 +30,11 @@ const model = {
     view.renderMovies(this.movies)
   },
   // your code
+  deleteMovie(id){
+    this.movies = this.movies.filter(movie => movie.id !== id);
+
+    view.renderMovies(this.movies)
+  }
 }
 
 const view = {
@@ -39,6 +44,8 @@ const view = {
     const form = document.querySelector('.form')
     const inputTitle = document.querySelector('.input-title')
     const inputDescription = document.querySelector('.input-description')
+    const list = document.querySelector('.list')
+
 
     form.addEventListener('submit', function (event) {
       event.preventDefault()
@@ -51,6 +58,15 @@ const view = {
     })
 
     // your code
+
+    list.addEventListener('click', function (event){
+      if (event.target.classList.contains('delete-button')) {
+        const id = +event.target.closest('.movie').id
+
+        controller.deleteMovie(id)
+      }
+    })
+
   },
   renderMovies(movies) {
     const list = document.querySelector('.list')
@@ -91,7 +107,13 @@ const controller = {
     }
   },
   // your code
+  deleteMovie(id){
+    model.deleteMovie(id)
+    const messageBox = document.querySelector('.message-box')
+    messageBox.textContent= "Фильм успешно удалён!"
+    }
 }
+
 
 function init() {
   view.init()
