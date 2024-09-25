@@ -36,7 +36,6 @@ const map = (array, callback) => {
 }
 
 
-
 const numbers = [1, 2, 3, 4, 5];
 const doubledNumbers = map(numbers, (element, index) => {
   return element * 2;
