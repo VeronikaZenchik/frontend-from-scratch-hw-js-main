@@ -25,7 +25,7 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 */
 
 const map = (array, callback) => {
-  let result = []
+  const result = []
   for (let index = 0; index < array.length; index++) {
     const element = array[index];
     if (callback(element, index)) {
@@ -37,14 +37,14 @@ const map = (array, callback) => {
 
 
 const numbers = [1, 2, 3, 4, 5];
-const doubledNumbers = numbers.map((element, index) => {
-  return element * 2;
-});
-console.log(doubledNumbers); 
+const doubledNumbers = map(numbers, (element, index) => {
+  return element * 2
+})
+
 
 const letters = ['a', 'b', 'c', 'd'];
-const indexLetters =letters.map((element, index) => {
+const indexLetters =map(letters, (element, index) => {
   return element + index;
 });
-console.log(indexLetters);
+
 
